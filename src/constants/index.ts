@@ -1,0 +1,1 @@
+export const SYSTEM_LOGO = "https://img2023.cnblogs.com/blog/2923613/202301/2923613-20230119215431721-1607010933.jpg";
