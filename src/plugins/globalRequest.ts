@@ -11,6 +11,7 @@ import {history} from "@@/core/history";
  * 配置request请求时的默认参数
  */
 const request = extend({
+  prefix: process.env.NODE_ENV === 'production' ? 'http://101.43.61.87' : undefined,
   credentials: 'include', // 默认请求是否带上cookie
   // requestType: 'form',
 });

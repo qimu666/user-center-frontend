@@ -115,7 +115,7 @@ export default () => {
       actionRef={actionRef}
       cardBordered
       // @ts-ignore
-      request={async (params = {}, sort, filter) => {
+      request={async (sort, filter) => {
         console.log(sort, filter);
         const userList = await getSearchUsers();
         return {
