@@ -4,15 +4,16 @@ export default [
     layout: false,
     routes: [
       {
-        path: '/user', routes: [
-          {name: '登录', path: '/user/login', component: './user/Login',},
-          {name: '注册', path: '/user/register', component: './user/Register'}
-        ]
+        path: '/user',
+        routes: [
+          { name: '登录', path: '/user/login', component: './user/Login' },
+          { name: '注册', path: '/user/register', component: './user/Register' },
+        ],
       },
-      {component: './404',},
+      { component: './404' },
     ],
   },
-  {path: '/welcome', name: '欢迎', icon: 'smile', component: './Welcome',},
+  { path: '/welcome', name: '欢迎', icon: 'smile', component: './Welcome' },
   {
     path: '/admin',
     name: '管理页',
@@ -20,17 +21,16 @@ export default [
     access: 'canAdmin',
     component: './Admin',
     routes: [
-      {path: '/admin/sub-manage', name: '用户管理', icon: 'smile', component: './Admin/UserManage',},
+      {
+        path: '/admin/sub-manage',
+        name: '用户管理',
+        icon: 'smile',
+        component: './Admin/UserManage',
+      },
       {
         component: './404',
       },
     ],
-  },
-  {
-    name: '查询表格',
-    icon: 'table',
-    path: '/list',
-    component: './TableList',
   },
   {
     path: '/',
