@@ -78,6 +78,7 @@ const columns: ProColumns<API.CurrentUser>[] = [
     title: '创建时间',
     dataIndex: 'createTime',
     valueType: 'dateTime',
+      hideInSearch: true,
   },
   {
     title: '操作',
@@ -149,7 +150,6 @@ export default () => {
         pageSize: 5,
       }}
       dateFormatter="string"
-      headerTitle="高级表格"
     />
   );
 };

@@ -13,7 +13,7 @@ declare namespace API {
     userStatus: number;
     userRole: number;
     planetCode: string;
-    createTime: Date;
+    createTime: z;
   };
 
   type BaseResponse<T> = {

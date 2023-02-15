@@ -63,6 +63,14 @@ const Register: React.FC = () => {
           {type === 'account' && (
             <>
               <ProFormText
+                name="username"
+                fieldProps={{
+                  size: 'large',
+                  prefix: <UserOutlined className={styles.prefixIcon}/>,
+                }}
+                placeholder={'请输入心仪的用户名'}
+              />
+              <ProFormText
                 name="userAccount"
                 fieldProps={{
                   size: 'large',
@@ -98,7 +106,6 @@ const Register: React.FC = () => {
                     message: "密码长度不能小于8"
                   }
                 ]}
-
               />
               <ProFormText.Password
                 name="checkPassword"

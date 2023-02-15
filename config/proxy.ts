@@ -11,22 +11,22 @@ export default {
     // localhost:8000/api/** -> https://preview.pro.ant.design/api/**
     '/api/': {
       // 要代理的地址
-      target: 'http://101.43.61.87:8090/',
-      // 配置了这个可以从 http 代理到 https
+      target: 'http://localhost:8080/',
+      // 配置了这个可以从 http 代理到 httpsz
       // 依赖 origin 的功能可能需要这个，比如 cookie
       changeOrigin: true,
     },
   },
   test: {
     '/api/': {
-      target: 'http://101.43.61.87:8090/',
+      target: 'http://localhost:8080/',
       changeOrigin: true,
       pathRewrite: { '^': '' },
     },
   },
   pre: {
     '/api/': {
-      target: 'http://101.43.61.87:8090/',
+      target: 'http://101.43.61.87:8080/',
       changeOrigin: true,
       pathRewrite: { '^': '' },
     },
