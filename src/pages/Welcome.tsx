@@ -2,6 +2,7 @@ import { PageContainer } from '@ant-design/pro-components';
 import { Alert, Card, Typography } from 'antd';
 import React from 'react';
 import styles from './Welcome.less';
+
 const CodePreview: React.FC = ({ children }) => (
   <pre className={styles.pre}>
     <code>
@@ -14,7 +15,7 @@ const Welcome: React.FC = () => {
     <PageContainer>
       <Card>
         <Alert
-          message={'更快更强的重型组件，已经发布。'}
+          message={'快去试试新项目吧'}
           type="success"
           showIcon
           banner
@@ -24,15 +25,11 @@ const Welcome: React.FC = () => {
           }}
         />
         <Typography.Text strong>
-          <a
-            href="https://procomponents.ant.design/components/table"
-            rel="noopener noreferrer"
-            target="__blank"
-          >
-            欢迎使用
+          <a href="https://qimuu.icu" rel="noopener noreferrer" target="__blank">
+            点击前往聚交园
           </a>
         </Typography.Text>
-        <CodePreview>yarn add @ant-design/pro-components</CodePreview>
+        <CodePreview>https://qimuu.icu</CodePreview>
       </Card>
     </PageContainer>
   );

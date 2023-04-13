@@ -13,16 +13,15 @@ declare namespace API {
     userStatus: number;
     userRole: number;
     planetCode: string;
-    createTime: z;
+    createTime: Date;
   };
 
   type BaseResponse<T> = {
     code: number;
     data: T;
     message: string;
-    description: string
+    description: string;
   };
-
 
   type LoginResult = {
     status?: string;
@@ -30,7 +29,7 @@ declare namespace API {
     currentAuthority?: string;
   };
 
-  type RegisterResult = number
+  type RegisterResult = number;
 
   type PageParams = {
     current?: number;

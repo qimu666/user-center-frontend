@@ -26,7 +26,7 @@ export default {
   },
   pre: {
     '/api/': {
-      target: 'http://101.43.61.87:8080/',
+      target: 'https://user.qimuu.icu:8082/',
       changeOrigin: true,
       pathRewrite: { '^': '' },
     },
